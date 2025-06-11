@@ -4,7 +4,9 @@
     {
       "src": "frontend/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "frontend/dist" }
+      "config": {
+        "distDir": "frontend/dist"
+      }
     },
     {
       "src": "backend/server.js",
@@ -17,10 +19,8 @@
       "dest": "/backend/server.js"
     }
   ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
+  "fallback": {
+    "source": "/(.*)",
+    "destination": "/index.html"
+  }
 }
