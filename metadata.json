@@ -1,0 +1,5 @@
+{
+  "name": "AI Travel Itinerary Planner",
+  "description": "A web application that helps users generate personalized travel itineraries using the Gemini AI. Users input their travel dates, destination, and preferences, and the app provides a detailed day-by-day plan.",
+  "requestFramePermissions": []
+}
